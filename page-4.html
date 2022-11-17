@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/sortable-table.css"/>
+  <title>the Brightest Star</title>
+</head>
+
+<body>
+  <header class="page-6">
+    <a class="logo" href="index.html"><span>the Brightest Star</span></a>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li >
+          <a href="page-2.html">How to Spot Sirius</a>
+        </li>
+        <li>
+          <a href="page-3.html">Discovery of Sirius B</a>
+        </li>
+        <li class="active-page">
+          <a href="page-4.html">the Brightest Star</a>
+        </li>
+        <li>
+          <a href="page-5.html">Cultures</a>
+        </li>
+        <li>
+          <a href="page-6.html">Sirius Facts</a>
+        </li>
+      </ul>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="page-2.html">How to Spot Sirius</a>
+          <a href="page-3.html">Discovery of Sirius B</a>
+          <a href="page-6.html">the Brightest Star</a>
+          <a href="page-5.html">Cultures</a>
+          <a class="active-menu-item" href="page-4.html">Sirius Facts</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <article>
+    <div>
+      <h1 class="header1">List of 10 Brightest Stars in The Night Sky</h1>
+      <p>Astronomers express the brightness of stars in terms of stellar magnitude. The smaller the number, the brighter the star.
+
+        The visual magnitude of Sirius is -1.44, lower – brighter – than any other star. There are brighter stars than Sirius in terms of actual energy and light output, but they are farther away and hence appear dimmer.
+        
+        Normally, the only objects that outshine Sirius in our heavens are the sun, moon, Venus, Jupiter, Mars and Mercury (and usually Sirius outshines Mercury, too).</p>
+        <table id="your-table-items">
+          <thead> 
+            <tr>
+              <th>Rank</th>  
+              <th>Name</th>
+              <th>Visual Magnitude(Mv)</th>
+              <th>Distance(ly)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td>0</td>
+            <td>Sun</td>
+            <td>-26.74</td>
+            <td>0.0000158</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Sirius</td>
+            <td>-1.46</td>
+            <td>8.6</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Canopus</td>
+            <td>-0.74</td>
+            <td>310</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Rigil Kentaurus & Toliman</td>
+            <td>-0.27</td>
+            <td>4.4</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Arcturus</td>
+            <td>-0.05</td>
+            <td>37</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Vega</td>
+            <td>0.03</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Capella</td>
+            <td>0.08</td>
+            <td>43</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Rigel</td>
+            <td>0.13</td>
+            <td>860</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Procyon</td>
+            <td>0.34</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Achernar</td>
+            <td>0.46</td>
+            <td>139</td>
+          </tr>
+        
+          </tbody>
+        </table>
+    </div>
+  </article>
+
+  <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+  <!-- BEG JavaScript -->
+  <script>
+    $(document).ready(function () {
+      $("table#your-table-items").tablesorter({
+        sortList: [[1, 0]],
+        CssAsc: "tablesorter-headerAsc",
+        CssDesc: "tablesorter-headerDesc"
+      });
+    });
+  </script>
+  <!-- END JavaScript -->
+
+  
+  
+  <div class="to-top"><a href="#">Top</a></div>
+  <footer style="width: 100%;background-color: black;padding:30px 0px 30px 0px">
+    <p style="margin-top: 50px; text-align:center;">Made in SF Bay Area by a star gazing lover</p>
+    <div class="social-icon">
+      <!-- Facebook -->
+      <a href="" target="_blank" class="fa fa-facebook-f fa-lg fa-2x padding-right"></a>
+      <!--Instagram-->
+      <a href="" target="_blank" class="fa fa-instagram fa-lg fa-2x padding-right"></a>
+      <!-- Twitter -->
+      <a href="" target="_blank" class="fa fa-twitter fa-lg fa-2x padding-right"></a>
+      <!-- Pinterest -->
+      <a href="" target="_blank" class="fa fa-pinterest fa-lg fa-2x padding-right"></a>
+      <!-- Linkedin -->
+      <a href="" target="_blank" class="fa fa-linkedin fa-lg fa-2x padding-right"></a>
+      <!-- GitHub -->
+      <a href="" target="_blank" class="fa fa-github-alt fa-lg fa-2x"></a>
+    </div>
+  </footer>
+
+  
+
+</body>
+
+</html>
